@@ -1,0 +1,26 @@
+
+
+  <div class="col-sm-10" style="background-color:white; height: 100%; width: 83.3333%; left:0;">
+    <h1 style="align-items: center; margin-left: 800px;">
+        This is Employee contact Details:
+    </h1> 
+    <br>
+    <br>
+      <div>
+        <table id="customers">
+              <thead>
+              <th>Name</th>
+              <th>Email Id</th>
+              <th>Contact No</th>
+              </thead>
+              <tbody>
+              <tr *ngFor="let empdetail of empdetails">
+              <td>{{empdetail.empname}}</td>
+              <td>{{empdetail.email}}</td>
+              <td>{{empdetail.number}}</td>
+              </tr>
+              </tbody>
+              </table>
+            </div>
+
+          </div>

@@ -1,0 +1,31 @@
+[{
+    "id": 1,
+    "name": "Home",
+    "age": 55
+},
+{
+    "id": 2,
+    "name": "&Uuml;ber uns", "age": 55
+    
+},
+{
+    "id": 3,
+    "name": "Events", "age": 55
+    
+},
+{
+    "id": 4,
+    "name": "Galerie", "age": 55
+   
+},
+{
+    "id": 5,
+    "name": "Sponsoren", "age": 55
+    
+},
+{
+    "id": 6,
+    "name": "Kontakt", "age": 55
+    
+}
+]
