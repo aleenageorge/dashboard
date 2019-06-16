@@ -14,7 +14,7 @@ export class DepartmentComponent implements OnInit {
     this.employeeService.getEmployees()
         .subscribe((res)=>{
           this.employees = res;
-          console.log(this.employees);
+          console.log(this.employees[0].name);
       });
   }
 

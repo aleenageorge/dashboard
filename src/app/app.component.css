@@ -4,6 +4,7 @@ nav {
     width: 100%;
     top: 0px;
     margin-left: 0px;
+    z-index: 1000;
 }
 img {
     top: 15px;
