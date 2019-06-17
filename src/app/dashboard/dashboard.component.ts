@@ -14,8 +14,10 @@ export class DashboardComponent implements OnInit {
     this.empdetails = service.getDisplay();
    }
    empdetails;
-
+   key;
   ngOnInit() {
+    this.key = 'set';
+    localStorage.setItem(this.key, 'access token');
     this.getChart();
   }
   getChart() {

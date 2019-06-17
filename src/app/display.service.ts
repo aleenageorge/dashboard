@@ -1,13 +1,15 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { IEmployee } from './employee';
 import { Observable } from 'rxjs';
+import { constructor } from 'q';
 
 @Injectable({
   providedIn: 'root'
 })
 export class DisplayService {
   private _url = '/assets/employees.json';
+
 
   getDisplay() {
    const empdetails = [
@@ -27,8 +29,11 @@ export class DisplayService {
    return empdetails;
   }
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) {}
+
   getEmployees(): Observable<IEmployee[]> {
+
     return this.http.get<IEmployee[]>(this._url);
   }
+
 }
